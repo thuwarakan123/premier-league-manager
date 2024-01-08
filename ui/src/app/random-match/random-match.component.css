@@ -1,0 +1,20 @@
+p{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  
+    font-weight: bold;
+    font-size: 16px;
+    margin-left:20% ;
+}
+
+button{
+    margin-left:22%;
+    background-color: red;
+    color:aqua;
+    border-radius: 20px;
+    padding:10px;
+    border:2px blue;
+    
+}
+
+button:focus{
+    outline: none;
+}

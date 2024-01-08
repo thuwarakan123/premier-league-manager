@@ -1,0 +1,24 @@
+<h2>Match Table</h2>
+<div>
+      <div id="search-hero">
+            <label for="search"> Enter the Date : </label>
+            <input id="form-control" type="text" name="search" [(ngModel)]="searchText" autocomplete="off" placeholder="Enter the date to search">
+      </div>
+<table id="customers">
+      <tr>
+         <th>Club No 1</th>
+         <th>Club No 2</th>
+         <th>Club No 1 Goal</th>
+         <th>Club No 2 Goal</th>
+         <th>Date</th>    
+      </tr>
+      <tr *ngFor = "let Match of Matches | filter:searchText">
+            <td>{{ Match.club1Name }}</td>
+            <td>{{ Match.club2Name }}</td>
+            <td>{{ Match.club1Goal }}</td>
+            <td>{{ Match.club2Goal }}</td>
+            <td>{{ Match.stringDate}}</td>
+      </tr>    
+</table>
+ 
+</div>

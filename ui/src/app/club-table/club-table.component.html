@@ -1,0 +1,28 @@
+<h2>Points Table</h2>
+<div>
+<table id="customers">
+    <tr>
+         <th>Football Club Name</th>
+         <th>Football club ID</th>
+         <th>Played Matches</th>
+         <th>Total Point</th>
+         <th>Win</th>
+         <th>Defeat</th>
+         <th>Draw</th>
+         <th>Total Goal</th>
+          
+      </tr>
+      <tr *ngFor = "let Club of Clubs">
+            <td>{{ Club.name}}</td>
+            <td>{{ Club.clubID}}</td>
+            <td>{{ Club.playedMatches}}</td>
+            <td>{{ Club.point}}</td>
+            <td>{{ Club.win}}</td>
+            <td>{{ Club.defeat}}</td>
+            <td>{{ Club.draw}}</td>
+            <td>{{ Club.scoredGoal}}</td>
+       </tr>
+     
+</table>
+ 
+</div>

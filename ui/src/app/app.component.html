@@ -1,0 +1,18 @@
+<h1 id="heading">{{heading}}</h1>
+<nav id="nav-bar">
+   <div id="container"> 
+     <ul>
+        <li routerLink="/matchtable"> Match Table </li>
+        <li routerLink="/Random">Random Match</li>
+        <li> Club Table
+           <ul>
+              <li routerLink="/clubtable"> Sorted by Point</li>
+              <li routerLink="/clubbywin"> Sorted by Win </li> 
+              <li routerLink="/scoreclub"> Sorted by Score </li>
+            </ul> 
+         </li> 
+        
+      </ul>
+   </div>
+</nav>
+<router-outlet></router-outlet>
